@@ -1,4 +1,3 @@
-count,season,holiday,workingday,weather,temp,atemp,humidity,windspeed,year,month,day,hour,minute,second
 16,1,0,0,1,9.84,14.395,81,0.0,2011,1,1,0,0,0
 40,1,0,0,1,9.02,13.635,80,0.0,2011,1,1,1,0,0
 32,1,0,0,1,9.02,13.635,80,0.0,2011,1,1,2,0,0
