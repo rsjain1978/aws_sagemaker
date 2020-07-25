@@ -8,6 +8,8 @@ from sklearn.externals import joblib
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score
+from sklearn.metrics import f1_score
+
 def train_model(data_loc_dir, 
                 max_iter_param,
                class_weight_param):
@@ -36,9 +38,11 @@ def train_model(data_loc_dir,
     print ('---------------> Starting to predict on test data')
     pred_y = model.predict(test_x)
     
-    print ('\t---------------> Accuracy %s'%(accuracy_score(test_y, pred_y)))
+    print ('Test Accuracy: %s'%(accuracy_score(test_y, pred_y)))
+    print ('Test F1-Score: %s'%(accuracy_score(test_y, pred_y)))
     
     return model
+
 if __name__ =='__main__':
 
     parser = argparse.ArgumentParser()
